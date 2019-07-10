@@ -27,14 +27,14 @@ It is common for the IB, and for other programming classes, to specify a program
 Here are some examples of simple prompts that show both `GIVEN*` and `MY*` objects:
 
 1. Create a collection called `MYCOLLECTION` that holds all prime numbers from 1 to 100.
-2. Output all the names in the list called `GIVENNAMES` 
+2. Output all the names in the list called `GIVENNAMES`
 3. You have a list of names called `GIVENNAMES` that contain 20 string values and you need their last names in `MYLASTNAMES`
 4. You have a list called `GIVENNUMBERS` of 100 random integers from 1 to 100 (inclusive) and you need to find the sum
 5. You have a collection of names called `GIVENANGELS` and you need to count how many of them there are
 
 In the actual exam, when giving answers, you won't have to create or populate these `GIVEN*` objects. You can write code as if they are already set up correctly. In the actual exam, however, you'll obviously need to create and populate the datastructures.
 
-In order go run code that actually works, we need to create and populate the `GIVEN*` objects with example values in our environment, even though we don't have to do that in the target environment (the actual exam). 
+In order go run code that actually works, we need to create and populate the `GIVEN*` objects with example values in our environment, even though we don't have to do that in the target environment (the actual exam).
 
 We'll also need to initialize `MY*` objects so that they can be populated in our code.
 
@@ -79,10 +79,11 @@ GIVENNUMBERS = List.from_x_integers(100, min=1, max=100)
 Finally, here is the full solution for problem #5:
 
 ```
-GIVENANGELS = Collection() 
+GIVENANGELS = Collection()
 loop while GIVENANGELS.hasNext()
     ITEM = GIVENANGELS.getNext()
     output ITEM
+end loop
 ```
 
 In the actual exam, you wouldn't need to write the first line.

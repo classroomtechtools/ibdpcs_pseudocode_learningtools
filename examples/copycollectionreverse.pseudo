@@ -1,0 +1,25 @@
+// MYSTACK is a stack, initially empty
+MYSTACK = Stack()
+SURVEY = Collection.from_list(["First", "Second", "Third"])
+MYARRAY = Array()
+
+COUNT = 0 // number of names
+
+if COUNT = 0 then
+	output "zero"
+if COUNT = 0 OR COUNT = 1 then
+	output "Hi"
+
+loop while SURVEY.hasNext()
+    MYSTACK.push( SURVEY.getNext() )
+    COUNT = COUNT + 1
+end loop
+
+output "Count: ", COUNT
+
+// Fill the array, MYARRAY, with the names in the stack
+loop POS from 0 to COUNT-1
+    MYARRAY[POS] = MYSTACK.pop()
+end loop
+
+output "Myarray: ", MYARRAY

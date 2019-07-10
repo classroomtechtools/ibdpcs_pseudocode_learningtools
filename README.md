@@ -1,6 +1,6 @@
 # IB DP Computer Science Pseudocode Workflow
 
-Two solutions to execute IB Pseudocode with Repl.it and/or Jupyter Lab.
+Three solutions to execute IB Pseudocode with Repl.it and/or Jupyter Lab and/or the command line.
 
 ## Quickstart
 
@@ -8,7 +8,7 @@ You can use either or both of the **repl.it** or **Jupyter Lab** solution.
 
 ### repl.it
 
-The easiest and fastest way to get started executing IB Pseudocode is to simply [navigate to this repl](https://repl.it/@adammorris/InputPseudocode) and follow the onscreen instructions.
+The easiest and fastest way to get started executing IB Pseudocode is to simply [navigate to this repl](https://repl.it/@adammorris/IB-DP-Pseudocode-Practice) and follow the onscreen instructions.
 
 This solution is useful as it has no installation requirements.
 
@@ -63,6 +63,16 @@ You're done! You can now type IB Pseudocode and execute it like real code!
 
 To exit the Jupyter Lab program, type `^C` or close the terminal window.
 
+### Command Line
+
+Follow the instructions above for Jupyter installation. When you are in the virtual environment, you have available to you the command `pseudo` and can be used like this:
+
+- Type your code into a file, for example `nano student.psuedo` and type `output "Hello, World"`
+- Execute the code by typing `execute student`
+- See the tranpsiled code by typing `transpile student'
+- There are further example pseudocode in the `examples` folder
+
+
 ## Usage notes
 
 Both solutions work in much the same way: It converts what you typed into valid Python code, and then runs that.
@@ -84,6 +94,3 @@ Both solutions work in much the same way: It converts what you typed into valid 
 - Every cell executes the pseudocode entered into that cell only. It does not "see" the code in other cells.
 
 - To see what the converted Python code is, type the special `@@transpile` "magic" code into the top of the cell. When you run the cell, it will output the Python code (as well as any resulting output)
-
-### Videos
-
