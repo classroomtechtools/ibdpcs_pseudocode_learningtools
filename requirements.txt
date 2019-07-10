@@ -1,0 +1,4 @@
+jupyter
+jupyterlab
+./ib_pseudocode_python
+./metakernel_pseudocode
