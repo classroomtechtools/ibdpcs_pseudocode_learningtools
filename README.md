@@ -4,7 +4,7 @@ Three solutions to execute IB Pseudocode with Repl.it and/or Jupyter Lab and/or 
 
 ## Quickstart
 
-You can use either or both of the **repl.it** or **Jupyter Lab** solution.
+You can use either or both of the **repl.it**, or **Jupyter Lab**, or **command line** solution.
 
 ### repl.it
 
@@ -68,8 +68,8 @@ To exit the Jupyter Lab program, type `^C` or close the terminal window.
 Follow the instructions above for Jupyter installation. When you are in the virtual environment, you have available to you the command `pseudo` and can be used like this:
 
 - Type your code into a file, for example `nano student.psuedo` and type `output "Hello, World"`
-- Execute the code by typing `execute student`
-- See the tranpsiled code by typing `transpile student'
+- Execute the code by typing `pseudo execute student`
+- See the transpiled code by typing `pseudo transpile student`
 - There are further example pseudocode in the `examples` folder
 
 
@@ -80,6 +80,8 @@ Both solutions work in much the same way: It converts what you typed into valid 
 - Syntax and data structures for IB Pseudocode can be found [here](https://ib.compscihub.net/programming/pseudo-code)
 
 - Create structures such as `Array`, `Collection` with an initilizer: `ARR = Array()`, `COL = Collection()` You can find [more information here](https://github.com/classroomtechtools/ibdpcs_pseudocode_workflow/blob/master/ib_pseudocode_python/README.md)
+
+- If you make an error, all of these solutions produce output that help you to debug the program
 
 ### Usage notes for Repl.it
 
