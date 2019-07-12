@@ -32,19 +32,17 @@ And then…
 
 ```
 # create virtual environment
-git clone https://github.com/classroomtechtools/ibdpcs_pseudocode_workflow.git
+git clone --recurse-submodules https://github.com/classroomtechtools/ibdpcs_pseudocode_workflow.git
 cd ibdpcs_pseudocode_workflow
-pipenv shell
 
-# you are now inside the virtual environment
-# this will take a few minutes:
-pip install -r requirements.txt
+# this will take a few minutes
+pipenv run pip install -r requirements.txt
 
 # this installs the custom jupyter kernel:
-python -m metakernel_pseudocode install
+pipenv run python -m metakernel_pseudocode install
 
 # and finally, launch Jupyter Lab:
-jupyter lab
+pipenv run jupyter lab
 ```
 
 Your default browser will open a new tab with Jupyter Lab, prompting you to choose what to do. Choose "new notebook" with "IB Pseudocode Python." In the cell, type:
