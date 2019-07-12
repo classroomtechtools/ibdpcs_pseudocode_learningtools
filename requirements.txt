@@ -1,4 +1,4 @@
 jupyter
 jupyterlab
-./ib_pseudocode_python
-./metakernel_pseudocode
+./metakernel/ib_pseudocode_python
+./metakernel
