@@ -1,0 +1,3 @@
+[submodule "metakernel"]
+	path = metakernel
+	url = https://github.com/classroomtechtools/metakernel.git
