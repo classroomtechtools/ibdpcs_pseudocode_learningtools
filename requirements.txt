@@ -1,5 +1,5 @@
 jupyter
 jupyterlab
-./metakernel/ib_pseudocode_python
-./metakernel
-./metakernel/metakernel_pseudocode
+-e ./metakernel/ib_pseudocode_python
+-e ./metakernel
+-e ./metakernel/metakernel_pseudocode
