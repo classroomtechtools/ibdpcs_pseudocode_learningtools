@@ -1,6 +1,6 @@
-# IB DP Computer Science Pseudocode Learning Tools
+# IB DP Computer Science Pseudocode Workflow
 
-Three solutions to execute IB Pseudocode with Repl.it and/or Jupyter Lab and/or the command line.
+Three solutions to execute IB Pseudocode: **Repl.it** and/or **Jupyter Notebook** and/or the **command line**.
 
 ## Quickstart
 
@@ -18,34 +18,19 @@ While the above is simple and complete, for extensive study this solution is rec
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/WDoVN0ABy2I/3.jpg)](https://www.youtube.com/watch?v=WDoVN0ABy2I)
 
-The following will install Jupyter and Jupyter Labs into a distinct directory on your (Mac) machine:
-
-Please use [pipenv](https://docs.pipenv.org/en/latest/) to manage your python installations. On Mac:
+Copy and paste this code into your terminal. It will install Jupyter Notebook into your `~/Documents/IB CS Learning Tools` folder
 
 ```
-# install homebrew: https://brew.sh/
-# at the terminal:
-brew install pipenv
+curl https://raw.githubusercontent.com/classroomtechtools/ibdpcs_pseudocode_learningtools/master/fresh_install.sh | sh
 ```
 
-And then…
+When complete, copy and paste this into your terminal. Your default browser will open a new tab with Jupyter Notebook.
 
 ```
-# create virtual environment
-git clone --recurse-submodules https://github.com/classroomtechtools/ibdpcs_pseudocode_learningtools.git
-cd ibdpcs_pseudocode_learningtools
-
-# this will take a few minutes
-pipenv run pip install -r requirements.txt
-
-# this installs the custom jupyter kernel:
-pipenv run python -m metakernel_pseudocode install
-
-# and finally, launch Jupyter Lab:
-pipenv run jupyter lab
+sh ~/Documents/IB\ CS\ Learning\ Tools/launch.sh
 ```
 
-Your default browser will open a new tab with Jupyter Lab, prompting you to choose what to do. Choose "new notebook" with "IB Pseudocode Python." In the cell, type:
+Choose "New" in top right hand corner and then "IB Pseudocode." In the cell, type:
 
 ```
 output "Hello World"
@@ -60,8 +45,6 @@ Hello World
 You're done! You can now type IB Pseudocode and execute it like real code!
 
 To exit the Jupyter Lab program, type `^C` or close the terminal window.
-
-Whenever you want to run Jupyter, just go to the path again …
 
 ### Command Line
 
@@ -79,7 +62,7 @@ Both solutions work in much the same way: It converts what you typed into valid 
 
 - Syntax and data structures for IB Pseudocode can be found [here](https://ib.compscihub.net/programming/pseudo-code)
 
-- Create structures such as `Array`, `Collection` with an initilizer: `ARR = Array()`, `COL = Collection()` You can find [more information here](https://github.com/classroomtechtools/ibdpcs_pseudocode_learningtools/blob/master/ib_pseudocode_python/README.md)
+- Create structures such as `Array`, `Collection` with an initilizer: `ARR = Array()`, `COL = Collection()` You can find [more information here](https://github.com/classroomtechtools/ibdpcs_pseudocode_workflow/blob/master/ib_pseudocode_python/README.md)
 
 - If you make an error, all of these solutions produce output that help you to debug the program
 
