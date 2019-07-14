@@ -1,4 +1,4 @@
-# IB DP Computer Science Pseudocode Workflow
+# IB DP Computer Science Pseudocode Learning Tools
 
 Three solutions to execute IB Pseudocode with Repl.it and/or Jupyter Lab and/or the command line.
 
@@ -32,8 +32,8 @@ And then…
 
 ```
 # create virtual environment
-git clone --recurse-submodules https://github.com/classroomtechtools/ibdpcs_pseudocode_workflow.git
-cd ibdpcs_pseudocode_workflow
+git clone --recurse-submodules https://github.com/classroomtechtools/ibdpcs_pseudocode_learningtools.git
+cd ibdpcs_pseudocode_learningtools
 
 # this will take a few minutes
 pipenv run pip install -r requirements.txt
@@ -61,6 +61,8 @@ You're done! You can now type IB Pseudocode and execute it like real code!
 
 To exit the Jupyter Lab program, type `^C` or close the terminal window.
 
+Whenever you want to run Jupyter, just go to the path again …
+
 ### Command Line
 
 Follow the instructions above for Jupyter installation. When you are in the virtual environment, you have available to you the command `pseudo` and can be used like this:
@@ -77,7 +79,7 @@ Both solutions work in much the same way: It converts what you typed into valid 
 
 - Syntax and data structures for IB Pseudocode can be found [here](https://ib.compscihub.net/programming/pseudo-code)
 
-- Create structures such as `Array`, `Collection` with an initilizer: `ARR = Array()`, `COL = Collection()` You can find [more information here](https://github.com/classroomtechtools/ibdpcs_pseudocode_workflow/blob/master/ib_pseudocode_python/README.md)
+- Create structures such as `Array`, `Collection` with an initilizer: `ARR = Array()`, `COL = Collection()` You can find [more information here](https://github.com/classroomtechtools/ibdpcs_pseudocode_learningtools/blob/master/ib_pseudocode_python/README.md)
 
 - If you make an error, all of these solutions produce output that help you to debug the program
 
