@@ -1,7 +1,11 @@
 type brew >/dev/null 2>&1 || { 
-  echo "Installing brew"
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo "Please install brew first! Exiting"
+  echo "https://docs.brew.sh/Installation"
+  exit 1
 }
+
+echo "Installing Python Package Manager"
+brew install pipenv
 
 mkdir ~/Documents/IB\ CS\ Learning\ Tools
 cd ~/Documents/IB\ CS\ Learning\ Tools    
