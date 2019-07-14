@@ -11,11 +11,11 @@ if hash brew 2>/dev/null; then
 
   mkdir ~/Documents/IB\ CS\ Learning\ Tools
   cd ~/Documents/IB\ CS\ Learning\ Tools    
-  touch ~/Documents/IB\ CS\ Learning\ Tools/do_not_mod_this_folder.txt
 
   echo "Installing into Documents folder"
   cd ~/Documents/IB\ CS\ Learning\ Tools/
   git clone --recurse-submodules https://github.com/classroomtechtools/ibdpcs_pseudocode_learningtools.git .
+  touch ~/Documents/IB\ CS\ Learning\ Tools/do_not_mod_this_folder.txt
 
   echo "Installing Jupyter"
   pipenv run pip install -r requirements.txt
