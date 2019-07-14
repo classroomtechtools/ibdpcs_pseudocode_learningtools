@@ -1,7 +1,13 @@
-if hash brew brew 2>/dev/null; then 
+if hash brew 2>/dev/null; then 
   # Brew is installed
+  
+  if hash pipenv 2>/dev/null; then 
+    echo "pipenv already installed"
+  else
+    echo "Installing pipenv https://docs.pipenv.org/en/latest/"
+    brew install pipenv
+  fi
   echo "Installing Python Package Manager"
-  brew install pipenv
 
   mkdir ~/Documents/IB\ CS\ Learning\ Tools
   cd ~/Documents/IB\ CS\ Learning\ Tools    
@@ -26,5 +32,3 @@ else
   echo "Please install brew first! Exiting"
   echo "https://docs.brew.sh/Installation"
 fi
-
-
