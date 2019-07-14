@@ -7,15 +7,13 @@ if hash brew 2>/dev/null; then
     echo "Installing pipenv https://docs.pipenv.org/en/latest/"
     brew install pipenv
   fi
-  echo "Installing Python Package Manager"
 
   mkdir ~/Documents/IB\ CS\ Learning\ Tools
-  cd ~/Documents/IB\ CS\ Learning\ Tools    
-
-  echo "Installing into Documents folder"
   cd ~/Documents/IB\ CS\ Learning\ Tools/
-  git clone --recurse-submodules https://github.com/classroomtechtools/ibdpcs_pseudocode_learningtools.git .
-  touch ~/Documents/IB\ CS\ Learning\ Tools/do_not_mod_this_folder.txt
+  
+  echo "Installing into Documents folder"
+  git clone --recurse-submodules https://github.com/classroomtechtools/ibdpcs_pseudocode_learningtools.git  ~/Documents/IB\ CS\ Learning\ Tools/
+  touch DONOT_MODIFY_THISFOLDER.txt
 
   echo "Installing Jupyter"
   pipenv run pip install -r requirements.txt
@@ -25,8 +23,8 @@ if hash brew 2>/dev/null; then
 
   echo "------------"
   echo "Installation Complete"
-  echo "To launch Jupyter, type:"
-  echo "sh launch.sh"
+  echo "To launch Jupyter, copy and paste this to terminal:"
+  echo "sh ~/Documents/IB\ CS\ Learning\ Tools/launch.sh"
   
 else
   echo "Please install brew first! Exiting"
