@@ -21,11 +21,14 @@ if hash brew 2>/dev/null; then
   echo "Installing Pseudocode Kernel"
   pipenv run python -m metakernel_pseudocode install
 
+  echo "Installing alias"
+  echo 'alias IBCS="sh ~/Documents/IB\ CS\ Learning\ Tools/launch.sh"' >> ~/.bash_profile
+  source ~/.bash_profile
+
   echo "------------"
   echo "Installation Complete"
-  echo "To launch Jupyter, copy and paste this to terminal:"
-  echo "sh ~/Documents/IB\ CS\ Learning\ Tools/launch.sh"
-  
+  echo "To launch Jupyter, open a new window in your terminal, and type:"
+  echo "IBCS"
 else
   echo "Please install brew first! Exiting"
   echo "https://docs.brew.sh/Installation"
