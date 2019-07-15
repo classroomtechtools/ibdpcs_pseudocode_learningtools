@@ -24,10 +24,10 @@ Copy and paste this code into your terminal. It will install Jupyter Notebook in
 curl https://raw.githubusercontent.com/classroomtechtools/ibdpcs_pseudocode_learningtools/master/fresh_install.sh | sh
 ```
 
-When complete, copy and paste this into your terminal. Your default browser will open a new tab with Jupyter Notebook.
+When complete, type this into a new window in your terminal. Your default browser will open a new tab with Jupyter Notebook.
 
 ```
-sh ~/Documents/IB\ CS\ Learning\ Tools/launch.sh
+IBCS
 ```
 
 Choose "New" in top right hand corner and then "IB Pseudocode." In the cell, type:
