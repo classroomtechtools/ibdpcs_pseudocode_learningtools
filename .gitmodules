@@ -1,3 +1,6 @@
 [submodule "metakernel"]
 	path = metakernel
 	url = https://github.com/classroomtechtools/metakernel.git
+[submodule "ib_dp_course"]
+	path = ib_dp_course
+	url = https://github.com/classroomtechtools/ib_dp_course.git
