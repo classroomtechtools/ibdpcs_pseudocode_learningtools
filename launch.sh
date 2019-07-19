@@ -6,8 +6,11 @@ else
     screen -mdS IBCS
 fi
 
-#echo "Launching Jupyter from ~/Documents/IB\ CS\ Learning\ Tools/ib_dp_course"
-
+if [ ! -d ~/Documents/IB\ CS\ Learning\ Tools/ ]; then 
+    echo "Not installed or else directory moved!"
+    exit 1
+fi
+cd ~/Documents/IB\ CS\ Learning\ Tools/
 # Open if already running, or re-launch if not
 OUTPUT=`pipenv run jupyter notebook list`
 CHARNUM=`echo $OUTPUT | wc -c`
