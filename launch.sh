@@ -2,7 +2,7 @@ if [ ! -d ~/Documents/IB\ CS\ Learning\ Tools/ib_dp_course ]; then
     echo "Not installed or else directory moved!"
     exit 1
 fi
-cd ~/Documents/IB\ CS\ Learning\ Tools/ib_dp_course
+cd ~/Documents/IB\ CS\ Learning\ Tools/
 
 if screen -list | grep -q "IBCS"; then
     # already running a screen by that name
