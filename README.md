@@ -18,25 +18,27 @@ While the above is simple and complete, for extensive study this solution is rec
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/WDoVN0ABy2I/3.jpg)](https://www.youtube.com/watch?v=WDoVN0ABy2I)
 
-Copy and paste this code into your terminal. It will install Jupyter Notebook into your `~/Documents/IB CS Learning Tools` folder
+1. Install [Homebrew](https://brew.sh/)
+
+2. Copy and paste this code into your terminal. It will install Jupyter Notebook into your `~/Documents/IB CS Learning Tools` folder
 
 ```
 curl https://raw.githubusercontent.com/classroomtechtools/ibdpcs_pseudocode_learningtools/master/fresh_install.sh | sh
 ```
 
-When complete, type this into a new window in your terminal. Your default browser will open a new tab with Jupyter Notebook.
+3. When complete, type this into a new window in your terminal. Your default browser will open a new tab with Jupyter Notebook.
 
 ```
 IBCS
 ```
 
-Choose "New" in top right hand corner and then "IB Pseudocode." In the cell, type:
+4. Choose "New" in top right hand corner and then "IB Pseudocode." In the cell, type:
 
 ```
 output "Hello World"
 ```
 
-and then type Control-Enter (or click the play button). Output is:
+and then type `Control-Enter` (or click the play button). Output is:
 
 ```
 Hello World
