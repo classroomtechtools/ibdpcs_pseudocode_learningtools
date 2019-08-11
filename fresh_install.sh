@@ -16,7 +16,6 @@ if hash brew 2>/dev/null; then
   touch DONOT_MODIFY_THISFOLDER.txt
 
   echo "Installing Jupyter"
-  cd ib_dp_course
   pipenv run pip install -r requirements.txt
 
   echo "Installing Pseudocode Kernel"
