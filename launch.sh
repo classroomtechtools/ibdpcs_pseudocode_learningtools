@@ -6,11 +6,11 @@ else
     screen -mdS IBCS
 fi
 
-if [ ! -d ~/Documents/IB\ CS\ Learning\ Tools/ ]; then 
+if [ ! -d ~/Documents/IB\ CS\ Learning\ Tools/ib_dp_course ]; then
     echo "Not installed or else directory moved!"
     exit 1
 fi
-cd ~/Documents/IB\ CS\ Learning\ Tools/
+cd ~/Documents/IB\ CS\ Learning\ Tools/ib_dp_course
 # Open if already running, or re-launch if not
 OUTPUT=`pipenv run jupyter notebook list`
 CHARNUM=`echo $OUTPUT | wc -c`
