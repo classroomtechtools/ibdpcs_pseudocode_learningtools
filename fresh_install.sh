@@ -19,7 +19,7 @@ if hash brew 2>/dev/null; then
   pipenv run pip install -r requirements.txt
 
   echo "Installing Pseudocode Kernel"
-  pipenv run python -m metakernel_pseudocode install
+  pipenv run python -m metakernel_vanilla_python install
 
   echo "Installing alias"
   echo 'alias IBCS="sh ~/Documents/IB\ CS\ Learning\ Tools/launch.sh"' >> ~/.bash_profile
