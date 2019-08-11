@@ -2,4 +2,4 @@ jupyter
 jupyterlab
 -e ./metakernel/ib_pseudocode_python
 -e ./metakernel
--e ./metakernel/metakernel_pseudocode
+-e ./metakernel/metakernel_vanilla_python
